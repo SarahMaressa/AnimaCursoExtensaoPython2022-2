@@ -1,29 +1,15 @@
-# Linha de comentario
-# Primeiro projeto Python!
+# Comando input(): permitir que o usuário digite algo
+#Comando de entrada
+nome = input("Digite seu nome: ")
 
-''' 
+#idade = int(input("...")) <- declarar variável como inteira
+idade = input('Digite sua idade: ')
 
-Comentario em bloco
+#Comando de saída
+print('Boa noite {}. Sua idade é {}'.format(nome,idade))
 
-'''
+# Mostrar o dobro da idade informada
+# Guardar variável em um tipo inteiro = int()
+dobro = int(idade) * 2
 
-# Comando de saida = print()
-# aspas simples ou duplas
-# print('Hello World!')
-print("Hello World!\n")
-
-#String
-nome = 'Sarah'
-
-#int
-idade = 20
-
-# Concatenar + ou ,
-#print('Idade: '+str(idade))
-#print(f'Idade: {idade}')
-#print('Idade {}'.format(idade))
-
-print('Nome: ', nome)
-print('Idade: ', idade, '\n')
-
-print('Meu nome é {} e tenho {} anos'.format(nome, idade))
+print('O dobro da sua idade é {}'.format(dobro))
