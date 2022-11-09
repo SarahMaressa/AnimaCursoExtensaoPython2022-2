@@ -23,6 +23,7 @@ frutas = ['maçã', 'banana', 'laranja']
 #incluir no final da lista
 frutas.append('maracujá')
 
+
 for x in frutas:
   print(x)
 
