@@ -13,6 +13,44 @@ def calcular_imposto(preco_produto):
 
 # Uso da função
 preco = 299
-imposto = calcular_imposto(preco)
-total = preco + imposto
-print(total)
+print(preco + calcular_imposto(preco))
+#imposto = calcular_imposto(preco)
+#total = preco + imposto
+#print(total)
+
+valores = [1.99, 24.50, 78.27, 1515.5]
+
+for valor in valores:
+  print(f"O imposto de {valor} é {calcular_imposto(valor)}")
+
+# Declarar uma função calcular_imposto_aliquota que recebe dois parametros
+# O preço do produto e a aliquota de imposto a ser aplicada
+# Se a aliquota não for informada, utilize 7% como padrão
+
+def calcular_imposto_aliquota(valor, aliquota = 7):
+  imposto = valor * aliquota/100
+  return imposto
+
+for valor in valores:
+  print(f"O imposto de {valor} é {calcular_imposto_aliquota(valor)}")
+
+for valor in valores:
+  print(f"O imposto de {valor} é {calcular_imposto_aliquota(valor, 5)}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
